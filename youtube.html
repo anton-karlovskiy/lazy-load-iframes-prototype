@@ -17,8 +17,8 @@
         box-sizing: border-box;
       }
       body {
-        max-width: 1420px;
-        margin: 0 auto;
+        max-width: 1280px;
+        margin: 8px auto;
         padding: 0 20px;
         color: #1a1a1a;
         font-family: Arial, sans-serif;
@@ -35,8 +35,18 @@
         margin-top: 40px;
         margin-bottom: 20px;
       }
-      p {
-
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     </style>
   </head>
@@ -88,5 +98,14 @@
       <p>In the middle of it all, there’s a quieter scene. Inside the medieval castle that’s one of humanity’s few remaining fortresses (stone being fireproof), the battered adults put on a play for the children. A white prince is swordfighting a Dark Lord who breathes with a scary, mechanical rasp … and the Dark Lord tells the prince, “I am your father!” All the children gasp and scream. At the end of days, humans are teaching the last children on Earth one of the great myths of our people.</p>
       <p>Sometimes the dopiest movies get things the most right.</p>
     </article>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/tGsKzZtRwxw"
+        frameBorder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        title="star wars introduction">
+      </iframe>
+    </div>
   </body>
 </html>
