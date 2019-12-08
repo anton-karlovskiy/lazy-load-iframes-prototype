@@ -2,14 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site for testing lazy loading on youtube embed"
     />
-    <link rel="apple-touch-icon" href="logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Youtube without lazy-load</title>
     <style>
@@ -100,14 +98,12 @@
     </article>
     <div class="iframe-wrapper">
       <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FStarWarsFansOnline%2Fposts%2F2495595447233070%3A0&width=500"
-        width="500"
-        height="652"
-        style="border:none;overflow:hidden"
-        scrolling="no"
-        frameborder="0"
-        allowTransparency="true"
-        allow="encrypted-media">
+        src="https://www.youtube.com/embed/tGsKzZtRwxw"
+        frameBorder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        loading="lazy"
+        title="star wars introduction">
       </iframe>
     </div>
   </body>
